@@ -8,8 +8,6 @@ namespace ES_TP.Data.Entities
             public BaseEntity()
             {
                 IsActive = true;
-                IsSystem = false;
-                IsRemoved = false;
             }
 
             public Guid Id { get; set; }
@@ -20,8 +18,6 @@ namespace ES_TP.Data.Entities
             [Timestamp]
             public byte[] RowVersion { get; set; }
             public virtual bool IsActive { get; set; }
-            public virtual bool IsSystem { get; set; }
-            public virtual bool IsRemoved { get; set; }
         }
     }
 
