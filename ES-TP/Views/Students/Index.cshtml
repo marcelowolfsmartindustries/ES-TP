@@ -1,0 +1,15 @@
+﻿@model List<ES_TP.Data.Entities.Student>
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<div class="text-center">
+    <h1>Students here!</h1>
+
+    @foreach (var item in Model)
+   {
+      <h1>@item.Name</h1>   
+   }
+
+</div>
